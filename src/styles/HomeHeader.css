@@ -1,0 +1,79 @@
+.home-header {
+    position: relative;
+    height: 80vh;
+
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: fill;
+    object-position: center;
+    color: transparent;
+    max-width: 100%;
+}
+
+.home-haeder-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.address-container {
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.address {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgb(74,24,160);
+    background: linear-gradient(90deg, rgba(74,24,160,1) 0%, rgba(106,42,215,1) 100%);
+    color: #fafafa;
+    padding: 0.9rem 1.2rem;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.address-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.address span {
+    font-weight: normal;
+}
+
+.address svg {
+    position: relative;
+    top: 3px;
+    bottom: 5px;
+    vertical-align: center;
+    margin-left: 0.2rem;
+}
+
+
+.address a {
+    color: rgb(74,24,160);
+    background-color: #fafafa;
+    margin-left: 10rem;
+    border-radius: 10px;
+    padding: 0.6rem;
+}
+
+.address a:hover {
+    cursor: pointer;
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {useEffect, useState} from "react";
+import NavBar from "./components/NavBar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
+
+  const [data, setData] = useState(null)
+
+  // const getMcServerInfo = async () => {
+  //   return await fetch('https://api.mcsrvstat.us/2/mc.epiclands.cz', {
+  //     cache: 'no-cache'
+  //   })
+  //       .then(res => res.json())
+  //       .then((result) => {
+  //         return result;
+  //       });
+  // };
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+        <Routes>
+          <Route index path="/" element={<Home />} />
+        </Routes>
     </div>
   );
 }
