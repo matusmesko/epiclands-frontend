@@ -3,6 +3,8 @@ import "../styles/Home.css"
 import Background from "../images/background.png"
 import {TbClipboardCopy} from "react-icons/tb";
 import HomeHeader from "../components/HomeHeader";
+import DiscordLink from "../components/DiscordLink";
+
 
 const Home = () => {
     const copy = async () => {
@@ -14,7 +16,9 @@ const Home = () => {
             <HomeHeader/>
 
             <main className={"home-main"}>
-
+                <div className="main-links">
+                    <DiscordLink/>
+                </div>
             </main>
 
         </div>

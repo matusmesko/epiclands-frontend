@@ -3,44 +3,29 @@ import Background from "../images/background.png";
 import {TbClipboardCopy} from "react-icons/tb";
 import "../styles/HomeHeader.css"
 import {HiOutlineStatusOnline} from "react-icons/hi";
-
+import Hero from "../images/lbs-player.png"
 const HomeHeader = () => {
 
-    const [data, setData] = useState("");
-
-    const getMcServerInfo = async () => {
-      return await fetch('https://api.craftlist.org/v1/6ax3k2xiggwzwibl0hh0/info', {
-        cache: 'no-cache',
-          mode: "no-cors"
-      })
-          .then(res => res.json())
-          .then((result) => {
-
-            setData(result.onlinePlayers)
-            return result;
-          });
-
-    };
-
-    useEffect(() => {
-        getMcServerInfo()
-    }, [])
 
     return (
         <header className={"home-header"}>
-            <div className="home-haeder-background">
-                <img src={Background} alt="Background" className={"background-image"}/>
-            </div>
-            <div className={"address-container"}>
-                <div className={"address"}>
-                    <div className={"address-info"}>
-                        <h3>IP: <span>mc.epiclands.cz</span> <TbClipboardCopy/></h3>
-                        <p><HiOutlineStatusOnline/> {data} hráčov online</p>
-                    </div>
-                    <a href="" style={{ textDecoration: 'none'}}>Jak se připojit</a>
-                </div>
 
+            <div className="home-haeder-background">
+                <div className="home-header-container">
+                        <div>
+                            <h1>EpicLands</h1>
+                            <p>Jsme Minecraft server, kde si můžeš užít napínavou zábavu s našimi skvělými minihrami! Náš server nabízí Survival, The Bridge a Bedwars, což hráčům poskytuje nekonečné hodiny zábavy a výzev.</p>
+                        </div>
+                        <img src={Hero} alt="Hero"/>
+                </div>
             </div>
+            {/*<div className={"address-container"}>*/}
+            {/*    <div className={"address"}>*/}
+            {/*        <h3>IP: <span>mc.epiclands.cz</span> <TbClipboardCopy/></h3>*/}
+            {/*        <a href="" style={{ textDecoration: 'none'}}>Jak se připojit</a>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+
         </header>
     );
 };

@@ -4,3 +4,10 @@
     min-height: 100vh;
     background-color: #252527;
 }
+
+.main-links {
+    max-width: 100vw;
+    height: 100%;
+    padding: 5rem;
+    display: block;
+}
