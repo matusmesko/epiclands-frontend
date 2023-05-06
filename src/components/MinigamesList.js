@@ -28,7 +28,7 @@ const MinigamesList = () => {
                     </div>
                     <div className="game-card-info">
                         <h3>The Bridge</h3>
-                        <p>Minecraft's The Bridge je rychlá minihra, která testuje schopnost hráčů vytvářet strategie a rychle reagovat. Cílem hry je překročit most a vstoupit do nepřátelské základny.</p>
+                        <p>The Bridge je rychlá minihra, která testuje schopnost hráčů vytvářet strategie a rychle reagovat. Cílem hry je překročit most a vstoupit do nepřátelské základny.</p>
                     </div>
                 </div>
 

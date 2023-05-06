@@ -19,12 +19,6 @@ const HomeHeader = () => {
                         <img src={Hero} alt="Hero"/>
                 </div>
             </div>
-            {/*<div className={"address-container"}>*/}
-            {/*    <div className={"address"}>*/}
-            {/*        <h3>IP: <span>mc.epiclands.cz</span> <TbClipboardCopy/></h3>*/}
-            {/*        <a href="" style={{ textDecoration: 'none'}}>Jak se připojit</a>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
 
         </header>
     );

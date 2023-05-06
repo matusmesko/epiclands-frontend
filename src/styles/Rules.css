@@ -1,0 +1,23 @@
+.rules-main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #252527;
+}
+
+.rules-container {
+    padding: 3rem 5rem;
+    color: #f6f5f5;
+}
+
+.rule {
+    margin: 2rem 0;
+}
+
+.rule h3{
+    font-size: 30px;
+    color: rgba(74,24,160,1);
+}
+
+.rule ul {
+    margin: 1rem 3rem;
+}

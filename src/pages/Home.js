@@ -1,7 +1,5 @@
 import React from 'react';
 import "../styles/Home.css"
-import Background from "../images/background.png"
-import {TbClipboardCopy} from "react-icons/tb";
 import HomeHeader from "../components/HomeHeader";
 import DiscordLink from "../components/DiscordLink";
 import MinecraftLink from "../components/MinecraftLink";
@@ -24,9 +22,6 @@ const Home = () => {
                 </div>
                 <div className="games">
                     <MinigamesList/>
-                </div>
-
-                <div className="vote-link">
                 </div>
             </main>
 

@@ -24,13 +24,13 @@ const NavBar = () => {
 
             <ul className={"navbar-links"}>
                 <li>
-                    <Link href="" style={{ textDecoration: 'none', color: 'white' }}>Domů</Link>
+                    <Link to={"/"} href="" style={{ textDecoration: 'none', color: 'white' }}>Domů</Link>
                 </li>
                 <li>
-                    <Link href="" style={{ textDecoration: 'none', color: 'white' }}>Připojení</Link>
+                    <Link to={"/pripojeni"} href="" style={{ textDecoration: 'none', color: 'white' }}>Připojení</Link>
                 </li>
                 <li>
-                    <Link href="" style={{ textDecoration: 'none', color: 'white' }}>Pravidla</Link>
+                    <Link to={"/pravidla"} href="" style={{ textDecoration: 'none', color: 'white' }}>Pravidla</Link>
                 </li>
                 <li>
                     <Link href="" style={{ textDecoration: 'none', color: 'white' }}>Nábory</Link>
