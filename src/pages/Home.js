@@ -4,6 +4,8 @@ import Background from "../images/background.png"
 import {TbClipboardCopy} from "react-icons/tb";
 import HomeHeader from "../components/HomeHeader";
 import DiscordLink from "../components/DiscordLink";
+import MinecraftLink from "../components/MinecraftLink";
+import MinigamesList from "../components/MinigamesList";
 
 
 const Home = () => {
@@ -18,6 +20,13 @@ const Home = () => {
             <main className={"home-main"}>
                 <div className="main-links">
                     <DiscordLink/>
+                    <MinecraftLink/>
+                </div>
+                <div className="games">
+                    <MinigamesList/>
+                </div>
+
+                <div className="vote-link">
                 </div>
             </main>
 
