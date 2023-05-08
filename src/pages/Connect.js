@@ -14,7 +14,7 @@ const Connect = () => {
                         <li>Klikněte na tlačítko Multiplayer a poté na Add server, kam do pole Server Adress vyplňte IP: <span>mc.epiclands.cz</span></li>
                         <li>Klikněte na tlačítko Done</li>
                         <li>Při prvním připojení se musíte zaregistrovat příkazem: <span>/register vaseheslo vaseheslo</span></li>
-                        <li>Při dalším přihlášení na server použijte příkaz: <span>/login heslo</span></li>
+                        <li>Při dalším přihlášení na server použijte příkaz: <span>/login vaseheslo</span></li>
                     </ul>
                 </div>
             </main>
