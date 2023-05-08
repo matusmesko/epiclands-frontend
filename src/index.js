@@ -4,12 +4,35 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./utils/ScrollToTop";
+import {
+    ApolloClient,
+    InMemoryCache,
+    ApolloProvider,
+    useQuery,
+    gql, createHttpLink
+} from "@apollo/client";
+
+const httplink = createHttpLink({
+    uri: "https://localhost:8080"
+})
+
+
+const client = new ApolloClient({
+    uri: httplink,
+    cache: new InMemoryCache()
+});
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+     <ApolloProvider client={client}>
+        <BrowserRouter>
+            <ScrollToTop />
+            <App />
+        </BrowserRouter>
+     </ApolloProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

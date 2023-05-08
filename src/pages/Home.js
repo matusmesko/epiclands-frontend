@@ -6,6 +6,7 @@ import MinecraftLink from "../components/MinecraftLink";
 import MinigamesList from "../components/MinigamesList";
 
 
+
 const Home = () => {
     const copy = async () => {
         await navigator.clipboard.writeText("mc.epiclands.com");

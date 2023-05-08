@@ -5,6 +5,7 @@ import "../styles/Connect.css"
 const Connect = () => {
     return (
         <div>
+
             <SmallHeader title={"Připojení"}/>
             <main className={"connect-main"}>
                 <div className="connect-container">

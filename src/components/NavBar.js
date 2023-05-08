@@ -13,6 +13,10 @@ const NavBar = () => {
             setColorchange(false);
         }
     };
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
     window.addEventListener('scroll', changeNavbarColor);
     return (
         <nav className={colorChange ? 'navbar sticky' : 'navbar'}>
@@ -27,13 +31,13 @@ const NavBar = () => {
                     <Link to={"/"} href="" style={{ textDecoration: 'none', color: 'white' }}>Domů</Link>
                 </li>
                 <li>
-                    <Link to={"/pripojeni"} href="" style={{ textDecoration: 'none', color: 'white' }}>Připojení</Link>
+                    <Link to={"/pripojeni"}  href="" style={{ textDecoration: 'none', color: 'white' }}>Připojení</Link>
                 </li>
                 <li>
-                    <Link to={"/pravidla"} href="" style={{ textDecoration: 'none', color: 'white' }}>Pravidla</Link>
+                    <Link to={"/pravidla"}  href="" style={{ textDecoration: 'none', color: 'white' }}>Pravidla</Link>
                 </li>
                 <li>
-                    <Link href="" style={{ textDecoration: 'none', color: 'white' }}>Nábory</Link>
+                    <Link  href="" style={{ textDecoration: 'none', color: 'white' }}>Nábory</Link>
                 </li>
                 <li className={"navbar-store"}>
                     <Link href="" style={{ textDecoration: 'none', color: 'white' }}>Obchod</Link>
