@@ -197,7 +197,7 @@ const AdminTeam = () => {
                                     <div className={"member"}>
                                         <img src={`https://visage.surgeplay.com/BUST/128/${developer.uuid}`} alt=""/>
                                         <p className={"nickname"}>{developer.username}</p>
-                                        <p className={"rank vedeni"}>{developer.primary_group}</p>
+                                        <p className={"rank developer"}>{developer.primary_group}</p>
                                     </div>
                                 )
                             })
@@ -208,7 +208,7 @@ const AdminTeam = () => {
                                     <div className={"member"}>
                                         <img src={`https://visage.surgeplay.com/BUST/128/${developer.uuid}`} alt=""/>
                                         <p className={"nickname"}>{developer.username}</p>
-                                        <p className={"rank vedeni"}>{developer.primary_group}</p>
+                                        <p className={"rank developer"}>{developer.primary_group}</p>
                                     </div>
                                 )
                             })
@@ -219,7 +219,7 @@ const AdminTeam = () => {
                                     <div className={"member"}>
                                         <img src={`https://visage.surgeplay.com/BUST/128/${developer.uuid}`} alt=""/>
                                         <p className={"nickname"}>{developer.username}</p>
-                                        <p className={"rank vedeni"}>{developer.primary_group}</p>
+                                        <p className={"rank technik"}>{developer.primary_group}</p>
                                     </div>
                                 )
                             })
@@ -230,7 +230,111 @@ const AdminTeam = () => {
                                     <div className={"member"}>
                                         <img src={`https://visage.surgeplay.com/BUST/128/${developer.uuid}`} alt=""/>
                                         <p className={"nickname"}>{developer.username}</p>
-                                        <p className={"rank vedeni"}>{developer.primary_group}</p>
+                                        <p className={"rank technik"}>{developer.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </section>
+                    <h3>Helper Team</h3>
+                    <section className={"helper-section"}>
+                        {
+                            mainHelpers.map((helper) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${helper.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{helper.username}</p>
+                                        <p className={"rank helper"}>{helper.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+
+                        {
+                            helpers.map((helper) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${helper.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{helper.username}</p>
+                                        <p className={"rank helper"}>{helper.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+
+                        {
+                            traineeHelper.map((helper) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${helper.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{helper.username}</p>
+                                        <p className={"rank helper"}>{helper.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </section>
+                    <h3>Builder Team</h3>
+                    <section className={"builder-team"}>
+                        {
+                            mainBuilders.map((builder) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${builder.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{builder.username}</p>
+                                        <p className={"rank builder"}>{builder.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+
+                        {
+                            builders.map((builder) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${builder.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{builder.username}</p>
+                                        <p className={"rank builder"}>{builder.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+
+                        {
+                            traineeBuilders.map((builder) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${builder.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{builder.username}</p>
+                                        <p className={"rank builder"}>{builder.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </section>
+                    <h3>Eventer Team</h3>
+                    <section className={"eventer-team"}>
+                        {
+                            eventers.map((eventer) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${eventer.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{eventer.username}</p>
+                                        <p className={"rank eventer"}>{eventer.primary_group}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </section>
+                    <h3>Tester Team</h3>
+                    <section className={"tester-team"}>
+                        {
+                            testers.map((tester) => {
+                                return(
+                                    <div className={"member"}>
+                                        <img src={`https://visage.surgeplay.com/BUST/128/${tester.uuid}`} alt=""/>
+                                        <p className={"nickname"}>{tester.username}</p>
+                                        <p className={"rank tester"}>{tester.primary_group}</p>
                                     </div>
                                 )
                             })
