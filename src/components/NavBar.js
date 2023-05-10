@@ -31,6 +31,9 @@ const NavBar = () => {
                     <Link to={"/"} href="" style={{ textDecoration: 'none', color: 'white' }}>Domů</Link>
                 </li>
                 <li>
+                    <Link to={"/adminteam"} href="" style={{ textDecoration: 'none', color: 'white' }}>Admin Team</Link>
+                </li>
+                <li>
                     <Link to={"/pripojeni"}  href="" style={{ textDecoration: 'none', color: 'white' }}>Připojení</Link>
                 </li>
                 <li>

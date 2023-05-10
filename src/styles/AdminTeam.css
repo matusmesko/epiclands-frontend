@@ -8,3 +8,80 @@
     justify-content: center;
     align-items: center;
 }
+
+.adminteam-container {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #252527;
+    padding-bottom: 4rem;
+    color: #fafafa;
+    box-sizing: border-box;
+}
+
+.adminteam-content {
+    padding: 5rem 4rem;
+}
+
+.adminteam-content h3 {
+    text-align: center;
+    display: block;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: rgba(74,24,160,1);
+}
+
+.adminteam-content section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-bottom: 5rem;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    background-color: #1c1b1b;
+    padding: 2rem;
+    border-radius: 10px;
+    user-select: none;
+    position: relative;
+    max-width: 220px;
+    min-width: 220px;
+    word-break: break-word;
+}
+
+.member img {
+    width: 128px;
+    height: 128px;
+    margin: auto auto 10px;
+}
+
+.rank {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+}
+.nickname {
+    padding-top: 0.5rem;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.majitel, .spmajitel {
+    background: rgb(215,191,50);
+    background: linear-gradient(90deg, rgba(215,191,50,0.8296452370010504) 5%, rgba(245,237,78,0.7288049008665967) 100%);
+    color: rgb(100, 85, 6);
+}
+
+.vedeni {
+    background: rgb(215, 50, 50);
+    background: linear-gradient(90deg, rgba(215, 50, 50, 0.83) 5%, rgba(245, 78, 78, 0.73) 100%);
+    color: rgb(74, 6, 6);
+}

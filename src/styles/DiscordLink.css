@@ -1,6 +1,6 @@
 .discord-container {
     position: relative;
-    color: #f6f5f5;
+    color: #fafafa;
     background-image: radial-gradient(circle, rgba(76,44,193,0.7688725490196079) 0%, rgba(61,44,246,0.5576680672268908) 100%),url("../images/discord.png");
     min-width: 49%;
     max-height: 100%;
@@ -36,7 +36,7 @@
 .discord-content a {
     text-decoration: none;
     color: rgba(76,44,193,1);
-    background-color: #f6f5f5;
+    background-color: #fafafa;
     border-radius: 5px;
     padding: 0.5rem 0.8rem;
 }
