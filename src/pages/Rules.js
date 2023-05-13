@@ -4,7 +4,7 @@ import SmallHeader from "../components/SmallHeader";
 
 const Rules = () => {
     return (
-        <div>
+        <>
             <SmallHeader title={"Pravidla"}/>
 
             <main className={"rules-main"}>
@@ -74,7 +74,7 @@ const Rules = () => {
                     </div>
                 </div>
             </main>
-        </div>
+        </>
     );
 };
 

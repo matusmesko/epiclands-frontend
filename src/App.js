@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div>
+    <>
         <NavBar/>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/adminteam" element={<AdminTeam />} />
         </Routes>
         <Footer/>
-    </div>
+    </>
   );
 }
 

@@ -13,7 +13,7 @@ const Home = () => {
         alert('Text copied');
     }
     return (
-        <div>
+        <>
             <HomeHeader/>
 
             <main className={"home-main"}>
@@ -25,7 +25,7 @@ const Home = () => {
                     <MinigamesList/>
                 </div>
             </main>
-        </div>
+        </>
     );
 };
 

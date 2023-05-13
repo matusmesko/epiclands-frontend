@@ -1,22 +1,22 @@
 .navbar {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
     background-color: transparent;
-    align-items: center;
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     color: #fafafa;
     z-index: 1;
     box-sizing: border-box;
-    padding: 0.5em 5em;
     transition: .3s;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.3rem 10rem;
+}
+
+.navbar-container {
+    width: 1360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .sticky {
@@ -30,15 +30,13 @@
 
 .navbar-links {
     display: flex;
+    gap: 30px;
     justify-content: space-between;
     list-style-type: none;
     text-decoration: none;
 }
 
-.navbar-links li {
-    padding: 1em;
 
-}
 
 .navbar-links a:hover {
     cursor: pointer;

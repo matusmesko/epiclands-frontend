@@ -4,7 +4,7 @@ import "../styles/Connect.css"
 
 const Connect = () => {
     return (
-        <div>
+        <>
 
             <SmallHeader title={"Připojení"}/>
             <main className={"connect-main"}>
@@ -19,7 +19,7 @@ const Connect = () => {
                     </ul>
                 </div>
             </main>
-        </div>
+        </>
     );
 };
 

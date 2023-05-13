@@ -143,7 +143,7 @@ const AdminTeam = () => {
     }
 
     return (
-        <div>
+        <>
             <SmallHeader title={"Admin Team"}/>
             <div className="adminteam-container">
                 <div className="adminteam-content">
@@ -342,7 +342,7 @@ const AdminTeam = () => {
                     </section>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
