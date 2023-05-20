@@ -1,6 +1,7 @@
 .small-header {
     position: relative;
-    min-height: 60vh;
+    min-height: 400px;
+
 }
 
 .small-header-background {
@@ -11,13 +12,11 @@
 }
 
 .small-header-container {
-    margin: 12rem 5rem;
     color: #fafafa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .small-header-container h1 {
     font-size: 50px;
+    margin-top: 150px;
 }

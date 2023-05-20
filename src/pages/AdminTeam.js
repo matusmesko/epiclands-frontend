@@ -23,6 +23,7 @@ const AdminTeam = () => {
     const [management, setManagement] = useState([])
     const[loading, setLoading] = useState(true)
 
+
     const getOwners = async () => {
         const response = await graphqlCalls(`{getOwners{uuid username primary_group}}`)
         setOwners(response.getOwners)
@@ -132,8 +133,6 @@ const AdminTeam = () => {
     }, [])
 
 
-
-
     if (loading) {
         return (
             <div className={"loading-container"}>
@@ -141,6 +140,7 @@ const AdminTeam = () => {
             </div>
         )
     }
+
 
     return (
         <>

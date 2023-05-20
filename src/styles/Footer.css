@@ -7,8 +7,9 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 1360px;
-    margin: 0 auto;
+    /*width: 1360px;*/
+    /*margin: 0 auto;*/
+    padding: 1rem 5rem;
 }
 
 .footer-container ul {

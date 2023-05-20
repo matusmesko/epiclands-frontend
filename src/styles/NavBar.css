@@ -11,12 +11,11 @@
     text-transform: uppercase;
 }
 
-.navbar-container {
-    width: 1360px;
+.navbar-container, .navbar-container-active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    padding: 1rem 5rem;
 }
 
 .sticky {
@@ -28,7 +27,7 @@
     height: 75px;
 }
 
-.navbar-links {
+.navbar-links, .navbar-links-active {
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -36,7 +35,9 @@
     text-decoration: none;
 }
 
-
+.navbar-buttons {
+    display: none;
+}
 
 .navbar-links a:hover {
     cursor: pointer;
@@ -46,6 +47,59 @@
 .navbar-store a{
     background-color: rgba(74,24,160,1);
     border-radius: 10px;
-    padding: 0;
     padding: 0.6rem;
+}
+
+@media (max-width: 820px) {
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-buttons {
+        display: flex;
+    }
+
+    .navbar-links-active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-logo-active img {
+        padding-left: 15px;
+        margin-bottom: 50px;
+        margin-top: 15px;
+        height: 75px;
+    }
+
+    .navbar-container-active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #252527;
+        height: 100vh;
+        align-items: center;
+        justify-content: normal;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .navbar-container-active svg{
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .navbar-container svg{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-container {
+        padding: 1rem 3rem;
+    }
+
 }

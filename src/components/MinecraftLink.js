@@ -23,7 +23,7 @@ const MinecraftLink = () => {
 
     return (
         <div className={"minecraft-container"}>
-            <div>
+
                 <div className="minecraft-content">
                     <div>
                         <h3>Minecraft Server</h3>
@@ -34,7 +34,6 @@ const MinecraftLink = () => {
                         <img src={Hero} alt=""/>
                     </div>
                 </div>
-            </div>
         </div>
     );
 };

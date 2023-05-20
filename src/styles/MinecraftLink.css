@@ -2,8 +2,6 @@
     position: relative;
     color: #fafafa;
     background-image: radial-gradient(circle, rgba(28, 127, 56, 0.77) 0%, rgba(33, 188, 35, 0.56) 100%),url("../images/mcBackground.png");
-    min-width: 100%;
-    max-height: 100%;
     min-height: 165px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +47,68 @@
 
 .minecraft-content img {
     position: absolute;
-    top: -3rem;
-    right: 5rem;
-    height: 14rem;
+    top: -50px;
+    right: 100px;
+    height: 230px;
+}
+
+@media (max-width: 1400px) {
+    .minecraft-content img {
+        right: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .minecraft-content img {
+        right: 100px;
+    }
+}
+
+@media (max-width: 670px) {
+    .minecraft-content img {
+        right: 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .minecraft-content img {
+        display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    .minecraft-content h3 {
+        font-size: 20px;
+    }
+
+    .minecraft-content p {
+        font-size: 17px;
+    }
+
+    .minecraft-content a {
+
+    }
+}
+
+@media (max-width: 410px) {
+    .minecraft-container {
+        width: 270px !important;
+    }
+
+    .minecraft-content h3 {
+        font-size: 18px;
+    }
+
+    .minecraft-content p {
+        font-size: 15px;
+    }
+
+    .minecraft-content a {
+        font-size: 14px;
+    }
+
+    .minecraft-content {
+        margin: 0 50px;
+    }
+
 }

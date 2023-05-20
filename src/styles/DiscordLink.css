@@ -2,7 +2,6 @@
     position: relative;
     color: #fafafa;
     background-image: radial-gradient(circle, rgba(76,44,193,0.7688725490196079) 0%, rgba(61,44,246,0.5576680672268908) 100%),url("../images/discord.png");
-    min-width: 100%;
     min-height: 165px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,8 +16,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: 100%;
-    min-height: 100%;
     margin: 0 5em;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +38,34 @@
 
 .discord-content img {
     position: absolute;
-    top: -2rem;
-    right: 5rem;
-    height: 11rem;
+    top: -30px;
+    right: 10px;
+    height: 180px;
+}
+
+@media (max-width: 580px) {
+
+
+    .discord-content img {
+        display: none;
+    }
+}
+
+@media (max-width: 410px) {
+    .discord-container {
+        width: 270px;
+    }
+
+    .discord-content h3 {
+        font-size: 18px;
+    }
+
+    .discord-content a {
+        font-size: 14px;
+    }
+
+    .discord-content {
+        margin: 0 50px;
+    }
+
 }

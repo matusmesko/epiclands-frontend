@@ -18,6 +18,31 @@
     color: rgba(74,24,160,1);
 }
 
+.rule li {
+    padding: 4px 0;
+}
+
 .rule ul {
     margin: 1rem 3rem;
+}
+
+@media (max-width: 500px) {
+    .rule li{
+        font-size: 15px;
+    }
+
+    .rule ul {
+        margin: 1rem 1.5rem;
+    }
+
+    .rules-container {
+        padding: 3rem 3rem;
+        color: #fafafa;
+    }
+}
+
+@media (max-width: 400px) {
+    .rule li{
+        font-size: 13px;
+    }
 }

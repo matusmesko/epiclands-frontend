@@ -1,7 +1,5 @@
 .loading-container {
     background-color: #252527;
-    width: 100vw;
-    height: 100vh;
     position: relative;
     color: rgba(74,24,160,1);
     display: flex;
@@ -11,15 +9,17 @@
 
 .adminteam-container {
     max-width: 100%;
-    min-height: 100vh;
     background-color: #252527;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     color: #fafafa;
     box-sizing: border-box;
 }
 
 .adminteam-content {
-    padding: 5rem 4rem;
+    padding-top: 5rem;
+    width: 1360px;
+    margin: 0 auto;
+
 }
 
 .adminteam-content h3 {
@@ -31,12 +31,12 @@
 }
 
 .adminteam-content section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    align-items: center;
+    justify-items: center;
     margin-bottom: 5rem;
+
 }
 
 .member {
@@ -50,7 +50,6 @@
     border-radius: 10px;
     user-select: none;
     position: relative;
-    max-width: 220px;
     min-width: 220px;
     word-break: break-word;
 }
@@ -120,4 +119,68 @@
     background: rgb(81, 82, 83);
     background: linear-gradient(90deg, rgba(70, 69, 69, 0.83) 5%, rgba(68, 74, 77, 0.73) 100%);
     color: rgb(22, 23, 23);
+}
+
+@media (max-width: 1360px) {
+    .adminteam-content {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .adminteam-content {
+        width: 1050px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .adminteam-content {
+        width: 900px;
+    }
+}
+
+@media (max-width: 900px) {
+    .adminteam-content {
+        width: 800px;
+    }
+}
+
+@media (max-width: 800px) {
+    .adminteam-content {
+        width: 650px;
+    }
+}
+
+@media (max-width: 650px) {
+    .adminteam-content {
+        width: 450px;
+    }
+}
+
+@media (max-width: 450px) {
+    .adminteam-content {
+        width: 300px;
+    }
+
+    .adminteam-content h3 {
+        font-size: 30px;
+    }
+
+    .adminteam-content section {
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 340px) {
+    .adminteam-content {
+        width: 200px;
+    }
+
+    .member {
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .nickname {
+        font-size: 20px;
+    }
 }

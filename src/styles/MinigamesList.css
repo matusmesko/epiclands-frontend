@@ -2,6 +2,8 @@
 .games-container h1 {
     color: #fafafa;
     font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .games-container span {
@@ -12,7 +14,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
     width: 100%;
-    max-width: 100%;
     grid-gap: 30px;
 }
 
@@ -63,4 +64,31 @@
 
 .game-card-info p {
     margin: 0.3rem 1.5rem 1.5rem;
+}
+
+@media (max-width: 410px) {
+
+    .games-container h1 {
+        font-size: 30px;
+    }
+
+    .game-card {
+        width: 270px;
+    }
+
+    .game-card-haeder h1 {
+        font-size: 30px;
+    }
+
+    .game-card-haeder {
+        height: 150px;
+    }
+
+    .game-card-info h3 {
+        font-size: 20px;
+    }
+
+    .game-card-info p {
+        font-size: 13px;
+    }
 }

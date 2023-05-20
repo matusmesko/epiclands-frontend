@@ -9,6 +9,22 @@
     color: #fafafa;
 }
 
+.connect-container li {
+    padding: 2px 0;
+}
+
 .connect-container span {
     color: rgba(74,24,160,1);
+}
+
+@media (max-width: 300px) {
+    .connect-container li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .connect-container {
+        padding: 3rem;
+    }
 }
