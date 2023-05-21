@@ -12,7 +12,7 @@ const Footer = () => {
                         <ul>
                             <li><a href="/">Domů</a></li>
                             <li><a href="/pripojeni">Připojení</a></li>
-                            <li><a href="">Obchod</a></li>
+                            <li><a href="https://epiclands.craftingstore.net/">Obchod</a></li>
                         </ul>
                     </div>
 

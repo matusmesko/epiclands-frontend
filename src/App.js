@@ -6,6 +6,7 @@ import Rules from "./pages/Rules";
 import Connect from "./pages/Connect";
 import Footer from "./components/Footer";
 import AdminTeam from "./pages/AdminTeam"
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/pravidla" element={<Rules />} />
           <Route exact path="/pripojeni" element={<Connect />} />
           <Route exact path="/adminteam" element={<AdminTeam />} />
+          <Route exact path="*" element={<ErrorPage />} />
         </Routes>
         <Footer/>
     </>

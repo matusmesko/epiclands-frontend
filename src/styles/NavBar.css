@@ -50,6 +50,10 @@
     padding: 0.6rem;
 }
 
+.navbar-logo-active img {
+    height: 75px;
+}
+
 @media (max-width: 820px) {
 
     .navbar-links {
@@ -77,7 +81,8 @@
         flex-direction: column;
         text-align: center;
         background-color: #252527;
-        height: 100vh;
+        min-height: 100vh;
+        height: fit-content;
         align-items: center;
         justify-content: normal;
         top: 0;

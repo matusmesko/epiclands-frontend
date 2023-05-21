@@ -1,0 +1,18 @@
+.error-container {
+    height: 100vh;
+    position: relative;
+}
+
+.error-content {
+    background: linear-gradient(90deg, rgba(74,24,160,1) 0%, rgba(106,42,215,1) 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    font-size: 30px;
+}
+
+.error-content h1 {
+    user-select: none;
+}
