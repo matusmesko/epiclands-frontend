@@ -21,6 +21,17 @@ const MinecraftLink = () => {
     }, [])
 
 
+    const copyIpServer = () => {
+        let copyText = document.getElementById("copy");
+        let textArea = document.createElement("textarea");
+        textArea.value = copyText.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+    }
+
+
     return (
         <div className={"minecraft-container"}>
 
@@ -28,7 +39,8 @@ const MinecraftLink = () => {
                     <div>
                         <h3>Minecraft Server</h3>
                         <p>Na serveru hraje {data} hráčů</p>
-                        <a onClick={() => {navigator.clipboard.writeText("mc.epiclands.com")}}>Skopírovat IP</a>
+                        <a onClick={() => copyIpServer()}>Skopírovat IP</a>
+                        <p id="copy">mc.epiclands.com</p>
                     </div>
                     <div>
                         <img src={Hero} alt=""/>
